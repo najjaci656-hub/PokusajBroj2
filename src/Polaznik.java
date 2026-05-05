@@ -33,4 +33,18 @@ public class Polaznik {
     public String toString() {
         return "Polaznik: " + ime + " " + prezime + " (" + email + ")";
     }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Polaznik polaznik = (Polaznik) o;
+        return java.util.Objects.equals(email, polaznik.email);
+    }
+        @Override
+        public int hashCode() {
+            return java.util.Objects.hash(email);
+   }
 }
+
+
+
