@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class Polaznik {
     private String ime;
     private String prezime;
