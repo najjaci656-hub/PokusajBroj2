@@ -37,7 +37,15 @@ public class EvidencijaPolaznika {
             nastavi = true;
             }
         }
+
         System.out.println("Polaznik je dodan!");
+
+        ArrayList<Polaznik> listaZaMijesanje = new ArrayList<>(listaPolaznik.values());
+        java.util.Collections.shuffle(listaZaMijesanje);
+        System.out.println("\nPopis polaznika u nasumičnom redoslijedu:");
+        for (Polaznik polaznik : listaZaMijesanje) {
+            System.out.println(polaznik);
+        }
 
         System.out.println("Popis polaznika: ");
         for(Polaznik pp: listaPolaznik.values()) {
