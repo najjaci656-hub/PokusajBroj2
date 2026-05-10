@@ -78,7 +78,6 @@ private static void brisanjeDrzave(SQLServerDataSource ds, Scanner sc) throws SQ
     System.out.print("Unesi ID države koju želiž obrisati: ");
     int id = Integer.parseInt(sc.nextLine());
 
-    // Provjera napomene: IdDrzava veći od 3
     if (id <= 3) {
         System.out.println("Greška: Dozvoljeno je brisanje samo onih država čiji je ID veći od 3.");
         return;
